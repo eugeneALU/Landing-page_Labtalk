@@ -1,8 +1,13 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 html, body {
     width: 100%;
     height: 100%;
     font-family: 'Play', sans-serif;
     position: relative;
+}
+button:hover {
+  cursor:hand;
 }
 
 .logo {
@@ -11,19 +16,19 @@ html, body {
     font-weight: bolder;
 }
 
-#product_display {
+.product_display {
 	margin: 0;
 	padding: 0;
 	align-items: center;
 }
 
-#product_display img{
-    width: 100%;
+.product_display img{
+    height: 100%;
 }
 
 
 @media (min-width: 1100px) {
-	#product_display img{
+	.product_display img{
    	 	position: relative;
     	top: 6rem;
 		width: 53%;
@@ -35,10 +40,10 @@ html, body {
 }
 
 @media (max-width: 485px) {
-	#product_display img{
+	.product_display img{
    	 	 width: 100%;
 	}
-	
+
 	.feature_img {
 		width: 100%;
 	}
@@ -48,12 +53,13 @@ html, body {
     font-size: 4rem;
     text-shadow: 0.07rem 0.07rem black;
     letter-spacing: 0.2rem;
-    opacity: 0.8;
     color: white;
     font-weight: bolder;
-    animation-name: example2;
-    animation-duration: 0.4s;
     font-family: 'Indie Flower', cursive;
+}
+.backgroundtext:hover {
+  font-size: 4.5rem;
+
 }
 
 .features {
@@ -65,34 +71,30 @@ html, body {
 	z-index: -1 !important;
 	width: 80%;
 	height: 50%;
+  border-radius: 1rem;
+
+
 }
+.ban-btn {
+  background-color: rgba(0,0,0,0);
+  border: 0.2rem solid white;
+  color: white;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Indie Flower', cursive;
+  border-radius: 1rem;
+}
+.ban-btn1 {
+  background-color:rgb(231, 169, 96);
+  border: 0.2rem solid rgb(231, 169, 96);
 
-
-@keyframes example2 {
-    0% {
-        opacity: 0.2;
-        font-size: 0.8rem;
-    }
-    25% {
-        opacity: 0.5;
-        font-size: 1.5rem;
-    }
-    40% {
-        opacity: 0.6;
-        font-size: 1.8rem;
-    }
-    50% {
-        opacity: 0.7;
-        font-size: 2rem;
-    }
-    80% {
-        opacity: 0.8;
-        font-size: 2.2rem;
-    }
-    100% {
-        opacity: 0.8;
-        font-size: 2.5rem;
-    }
+  color: white;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'Indie Flower', cursive;
+  border-radius: 1rem;
 }
 
 .navbar-offset {
@@ -118,29 +120,39 @@ html, body {
 }
 
 .topic {
-    font-family: 'cwTeXHei', sans-serif;
-    font-size: 1.6rem;
+  font-family: 'cwTeXYen', sans-serif;
+    font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 0.6rem;
     padding-top: 1rem;
+
 }
 
 .content {
-    font-family: 'cwTeXHei', sans-serif;
-    padding-bottom: 1rem;
+  font-family: 'cwTeXYen', sans-serif;
+  font-size: 1.5rem;
+  z-index: -1!important;
+    padding-bottom: 1.5rem;
+
 }
+
+
 
 .nav {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
 }
 
+@keyframes fly {
+  0%{}
+
+}
 #banner {
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../image/a1.png");
+    background-image: url("../image/a1.jpg");
     opacity: 0.9;
     background-position: center;
     text-align: center;
@@ -182,7 +194,7 @@ html, body {
 }
 
 button:hover {
-    background-color: orange!important;
+    background-color: rgb(226, 118, 99)!important;
     color: white;
     border: 0;
 }
@@ -319,6 +331,7 @@ footer {
     }
 }
 
+
 #arrow {
     text-align: center;
     font-weight: bolder;
@@ -401,6 +414,16 @@ footer {
     font-size: 2rem;
 }
 
+.cta-content {
+  font-family: 'cwTeXYen', sans-serif;
+  style="letter-spacing: 0.2rem;
+  font-size: 1rem;
+}
+.cta-btn {
+  font-size: 1rem;
+}
+
+
 @media (max-width: 575px) {
     #navbar {
         background-color: rgba(0, 0, 0, 1);
@@ -416,10 +439,10 @@ footer {
     }
     .content {
         padding-bottom: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .topic {
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing: 0;
         padding-top: 0.5rem;
     }
@@ -428,8 +451,14 @@ footer {
         animation-duration: 0s;
         ;
     }
+    .ban-btn1 {
+      margin-bottom: 1rem!important;
+    }
     .title {
         padding-top: 5rem;
+    }
+    .q{
+      font-size: 2rem;
     }
     .secondtitle {
         font-size: 1rem;
@@ -438,6 +467,9 @@ footer {
     footer {
         font-size: 0.2rem;
         letter-spacing: 0.2rem;
+    }
+    .ban-btn {
+      font-size: 1.8rem;
     }
     .contact {
       font-size: 1.2rem;
@@ -453,5 +485,7 @@ footer {
     .labtalk{
       padding-top: 2rem;
     }
-
+    .cta-btn {
+      font-size: 0.8rem!important;
+    }
 }
