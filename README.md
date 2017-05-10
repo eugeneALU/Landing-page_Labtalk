@@ -1,2 +1,3 @@
 # landing-page for project Labtalk
-* co-worker:https://github.com/chinancheng
+* our page: https://chinancheng.github.io/landing-page-labtalk/
+* co-worker: https://github.com/chinancheng
